@@ -22,12 +22,24 @@ public class ControleDeFluxo {
 		} else {
 			System.out.println("Reprovado");
 		}
+		
+		
 		if (nota >= 7) {
 			System.out.println("Aprovado");
 		}else if (nota >= 5){
 			System.out.println("Recuperacao");
 		}else {
 			System.out.println("Reprovado");
+		}
+		
+		
+		switch (nota) {
+		case 4: {
+			//   verificar default  continue  yield
+			 break;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + nota);
 		}
 	}
 }
