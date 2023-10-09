@@ -2,12 +2,10 @@ package edu.douglas.primeirasemana;
 
 import java.util.Iterator;
 
+import edu.douglas.classes.tipoEnum;
+
 public class Loops {
-
-	public Loops() {
-		// TODO Auto-generated constructor stub
-	}
-
+ 
 	public static void main(String args[]) {
 		int num = 5;
 		String nomes[] = { "UM", "DOIS", "TRES", "QUATRO", "CINCO" };
@@ -15,6 +13,18 @@ public class Loops {
 		for (int i = 0; i < nomes.length; i++) {
 			System.out.println(nomes[i]);
 		}
+		
+		/////////////////
+		//acesso Enum
+		for(tipoEnum e : tipoEnum.values()) {
+			System.out.println(e.getNome() + "-"+ e.getSigla());
+		}
+		
+		
+		
+		
+		
+		///////////
 		for (String nome : nomes) {
 			System.out.println("foreach " + nome);
 		}

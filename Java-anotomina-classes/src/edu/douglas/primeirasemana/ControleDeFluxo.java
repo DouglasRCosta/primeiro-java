@@ -35,7 +35,7 @@ public class ControleDeFluxo {
 		
 		switch (nota) {
 		case 4: {
-			//   verificar default  continue  yield
+			//   verificar=>default  continue  yield
 			 break;
 		}
 		default:

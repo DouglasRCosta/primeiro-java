@@ -1,5 +1,7 @@
 package edu.douglas.primeirasemana;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.*;
 
 public class excessoes {
@@ -11,7 +13,7 @@ public class excessoes {
 	public static void main(String[] args) {
 		// TOsDO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in).useLocale(Locale.ENGLISH);
-
+		
 		int age;
 		String lastName;
 		String name;
@@ -34,7 +36,27 @@ public class excessoes {
 			
 			System.out.println(e);
 		}
-
-	}
-
+		// exception checked precisam ser tratadas e unchecked nao preve um tratamento  
+		
+		
+		
+         ///  criar meu exception  
+	 
+		try {
+			String test = retornaString("te");
+		} catch (minhaException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
+		}
+	public static String retornaString(String i)throws minhaException {
+		    if (i.equals("ss")) {
+		    	throw new minhaException();
+		        
+		    }
+		    return "sucesso";
+		}
+		
+		
 }
